@@ -1,180 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link rel="icon" href="docs/balatro.png" type="image/png">
-    <style>
-        /* General Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-    
-        ::selection {
-            background: rgb(18, 18, 18);
-        }
-    
-        /* Body Styling */
-        body {
-            font-family: monospace;
-            background: linear-gradient(135deg, #131313 50%, #000 50%, #101010 10%);
-            background-size: 50px 50px; 
-            background-repeat: repeat;
-            color: #fff;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            text-align: center;
-            padding: 4rem 1rem; /* Added padding to prevent collision */
-        }
-    
-        header {
-            margin-bottom: 2rem;
-        }
-    
-        header h1 {
-            font-size: 4rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-        }
-    
-        header h1 span {
-            color: rgb(210, 30, 30);
-        }
-    
-        /* Navbar Styling */
-        nav {
-            position: fixed; /* Fixed position for navbar */
-            top: 2rem;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 1rem; /* Added gap to create spacing */
-            width: 100%;
-            max-width: 600px; /* Limit the width of the navbar */
-        }
-    
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 2rem;
-            transition: transform 0.3s ease, color 0.3s ease;
-        }
-    
-        nav a:hover {
-            color: rgb(210, 30, 30);
-            transform: scale(1.5);
-        }
-    
-        section {
-            max-width: 800px;
-            padding: 2rem;
-            background: rgba(0, 0, 0, 0.7);
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-        }
-    
-        section h2 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            color: rgb(255, 255, 255);
-        }
-    
-        section h2 span {
-            color: rgb(210, 30, 30);
-        }
-    
-        section p {
-            font-size: 1.2rem;
-            line-height: 1.8;
-        }
-    
-        section p span {
-            color: rgb(255, 255, 255);
-            text-decoration: none;
-        }
-    
-        footer {
-            margin-top: 2rem;
-            font-size: 0.8rem;
-            color: #666;
-        }
-    
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            body {
-                padding: 5rem 1rem; /* Adjust padding for tablet */
-            }
-    
-            nav {
-                flex-wrap: wrap; /* Allow icons to wrap */
-                justify-content: center; /* Center-align icons */
-            }
-    
-            nav a {
-                font-size: 1.5rem;
-            }
-        }
-    
-        @media (max-width: 480px) {
-            body {
-                padding: 6rem 1rem; /* Adjust padding for mobile */
-            }
-    
-            nav {
-                flex-direction: row; /* Stack icons vertically */
-                align-items: center;
-                gap: 1rem; /* Add spacing between items */
-                background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-                padding: 0.5rem 1rem;
-                border-radius: 50px; /* Rounded corners for a smooth look */
-                backdrop-filter: blur(10px); /* Adds the Gaussian blur effect */
-                -webkit-backdrop-filter: blur(10px); /* For Safari compatibility */
-                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Optional shadow for depth */
-                z-index: 1000; /* Ensures navbar stays above other elements */
-            }
-    
-            nav a {
-                font-size: 1.8rem;
-            }
-        }
-    </style>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About</title>
+  <link rel="icon" href="docs/balatro.png" type="image/png">
+  <style>
+    body {
+      margin: 0;
+      padding: 2rem;
+      font-family: system-ui, sans-serif;
+      line-height: 1.6;
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+    }
+    nav {
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #ff3c3c;
+    }
+    nav a {
+      margin-right: 1rem;
+      text-decoration: none;
+      color: #e0e0e0;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #ff3c3c;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #ff3c3c;
+    }
+    h2 {
+      font-size: 1.8rem;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      color: #ff3c3c;
+    }
+    p {
+      margin-bottom: 1rem;
+    }
+    ul {
+      margin-left: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    a {
+      color: #ff3c3c;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    /* Thin red line under nav */
+
+
+  </style>
 </head>
 <body>
+  <div class="container">
     <nav>
-        <a href="files.html" title="files"><i class="fas fa-file-alt"></i></a>
-        <a href="mailto:pratyay2@illinois.edu" title="email"><i class="fa-solid fa-envelope"></i></a>
-        <a href="https://www.youtube.com/@pratsgo" target="_blank" title="youtube"><i class="fab fa-youtube"></i></a>
-        <a href="https://github.com/pratyaygopal" target="_blank" title="github"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/pratyay-gopal/" target="_blank" title="linkedin"><i class="fab fa-linkedin"></i></a>
+      <a href="index.html">pratyay-gopal</a>
+      <a href="files.html">files</a>
+      <a href="mailto:pratyay2@illinois.edu">email</a>
+      <a href="https://github.com/pratyaygopal" target="_blank">github</a>
+      <a href="https://www.linkedin.com/in/pratyay-gopal/" target="_blank">linkedin</a>
     </nav>
 
-    <header>
-        <h1 style="font-size: 69px;"><span>P</span>ratyay <span>G</span>opal</h1>
-    </header>
+    <h1>pratyay gopal</h1>
+    <p>
+      CompE@UIUC with a focus in FPGAs, Computer Architecture and Digital Design.
+    </p>
 
-    <section>
-        <h2><span>A</span>bout <span>M</span>e</h2>
-        <p>
-            CompE@UIUC with a focus in FPGAs, Computer Architecture and Digital Design.
-            <br>
-            <br>
-            I help teach the computer architecture course at UIUC <a href="https://courses.grainger.illinois.edu/ECE411/fa2025/staff.html">(ECE 411)</a> and highly reccommend CompEs at UIUC to take this course for their senior design. 
-            <br>
-            <br>
-            <a href="https://sigarch.net/">SIGARCH@UIUC</a> is University of Illinois Urbana-Champaign's student-run computer architecture interest group which I run. We do workshops and paper discussions on computer architecture topics.
-        </p>
-    </section>
+    <h2>teaching</h2>
+    <p>
+      I help teach the computer architecture course at UIUC 
+      <a href="https://courses.grainger.illinois.edu/ECE411/fa2025/staff.html">(ECE 411)</a>.
+      I highly recommend CompEs at UIUC to take this course for their senior design.
+    </p>
+    <p>
+      I also help teach the required FPGA course at UIUC 
+      <a href="https://courses.grainger.illinois.edu/ECE411/fa2025/staff.html">(ECE 385)</a>
+    </p>
 
+    <h2>interests</h2>
+    <p>
+      <a href="https://sigarch.net/">SIGARCH@UIUC</a> is UIUC’s premier computer architecture interest group which I run.  
+      We do workshops and paper discussions on computer architecture topics.
+    </p>
+  </div>
 </body>
 </html>
