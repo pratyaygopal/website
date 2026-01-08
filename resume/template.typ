@@ -23,11 +23,12 @@
 }
 
 #let header(
-  name: "Pratyay Rudravaram",
-  website: "+1 9452680041",
-  email: "pratyay2@illinois.edu",
-  linkedin: "linkedin.com/in/pratyaygopal",
-  site: "github.com/pratyaygopal",
+  name: "Sigma Rizz",
+  website: "github.com/sigma",
+  email: "sigma@rizz.edu",
+  linkedin: "linkedin.com/in/sigma",
+  number: "123456789",
+  misc: "US Citizen"
 ) = {
   align(left,
     block[
@@ -35,8 +36,8 @@
       #link("https://" + website)[#website] |
       #link("mailto:" + email)[#email] |
       #link("https://" + linkedin)[#linkedin] |
-      #link("https://" + site)[#site] |
-      US Citizen
+      #number |
+      #misc
     ]
   )
 }
@@ -53,7 +54,7 @@
 
 #let coursework_item(
   category: "Coursework",
-  courses: "Balling, Yoga, FPGA",
+  courses: "gooning 101, sigma 102, fpga 067",
 ) = {
   set block(above: 0.7em)
   set text(size: 1em)
@@ -64,7 +65,7 @@
 #let edu_item(
   name: "University Of Illinois Urbana Champaign", 
   degree: "B.S in ECE", 
-  location: "Champaign, Il", 
+  GPA: "6.7", 
   date: "December 2026"
 ) = {
   set block(above: 0.7em, below: 1em)
@@ -75,7 +76,7 @@
       _#degree _
     ],
     align(right)[
-      #location \
+      #GPA \
       _#date _
     ]
   ))

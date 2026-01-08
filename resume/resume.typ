@@ -7,14 +7,15 @@
   website: "pratyay.org",
   email: "pratyay2@illinois.edu",
   linkedin: "linkedin.com/in/pratyaygopal",
-  site: "9452680041",
+  number: "123456789",
+  misc: "US Citizen"
 )
 
 #resume_heading[Education]
 #edu_item(
   name: "University Of Illinois Urbana Champaign",
   degree: "Bachelor of Science in Computer Engineering, Minor in Mathematics",
-  location: " ",
+  GPA: " ",
   date: "December 2026"
 )
 
