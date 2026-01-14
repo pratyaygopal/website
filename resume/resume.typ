@@ -72,7 +72,7 @@
 
 #project_item(
   name: "GOONIX - A Unix based Operating System for RISC-V",
-  skills: "pratyay.org/docs/goonix.pdf",
+  skills: "https://github.com/pratyaygopal/pgfs",
   [Implementing key components including virtual memory management, preemptive multitasking.],
   [Built device drivers for VirtIO devices and designed a read/write ext2-based filesystem with caching.],
   [Designed an implemented a custom filesystem inspired by FAT32 and the implemented mkfs utility in bash.]
