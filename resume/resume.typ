@@ -27,28 +27,24 @@
 #resume_heading[Experience]
 
 #exp_item(
+  role: "Performance Analysis Intern, Arm, inc. (Incoming)",
+  date: "June 2026 - ",
+)
+
+#exp_item(
   role: "RTL Verification Intern, Deepgrid Semi",
   date: "June 2025 - July 2025",
   [Developed a testing strategy to verify 5 modules of an open-source hardware accelerator using executed SystemVerilog UVM-esqe testbenches while ensuring 100\% functional correctness and simulation coverage],
-  [Implemented 4 self-checking testbenches with scoreboard mechanisms and functional coverage models.],
-  [Integrated Vivado-based synthesis and implementation flow to validate FPGA compliance and performance.]
+  [Implemented 4 self-checking testbenches with scoreboard mechanisms and functional coverage models.]
 )
 
 #exp_item(
   role: "Computer Architecture Course Assistant",
   date: "Aug 2025 -- Present",
   [Hosted office hours for class projects like the pipelined processor and multicycle set associative cache.],
+  [Developed documentation for the new SCons based hardware flow while maintaining backward compatability.],
   [Mentored student project groups and helped them debug RTL, analyze timing, and promoted design thinking.],
-  [Designed exam questions for the midterm and final, ensuring alignment with course learning objectives.],
-  [Conducted project related review sessions and proctored exams for 150+ students.]
-)
-
-#exp_item(
-  role: "Digital Systems FPGA Course Assistant",
-  date: "Jan 2025 -- Present",
-  [Hosted office hours for course’s FPGA projects including VGA text controller and RISC processor.],
-  [Moderated the 1000+ members class discord server and clarified student questions on SV and FPGA testing.],
-  [Conducted demos, reviewed SystemVerilog testbenches, and facilitated hardware debugging and verification.]
+  [Designed exam questions for the midterm and final, ensuring alignment with course learning objectives.]
 )
 
 #exp_item(
@@ -57,6 +53,14 @@
   [Officer and Workshop Lead for UIUC’s premier computer architecture student organization. (sigarch.net)],
   [Designing workshops to introduce students to RTL design and simulation, computer architecture and ISAs.],
   [Organized and collaborated with SIGrobotics to host a recuiting event for Neuralink at UIUC.]
+)
+
+#exp_item(
+  role: "Digital Systems FPGA Course Assistant",
+  date: "Jan 2025 -- Jan 2026",
+  [Hosted office hours for course’s FPGA projects including VGA text controller and RISC processor.],
+  [Moderated the 1000+ members class discord server and clarified student questions on SV and FPGA testing.],
+  [Conducted demos, reviewed SystemVerilog testbenches, and facilitated hardware debugging and verification.]
 )
 
 
@@ -71,8 +75,8 @@
 )
 
 #project_item(
-  name: "GOONIX - A Unix based Operating System for RISC-V",
-  skills: "https://github.com/pratyaygopal/pgfs",
+  name: "Unix based OS with a Custom Filesystem for RISC-V",
+  skills: "github.com/pratyaygopal/pgfs",
   [Implementing key components including virtual memory management, preemptive multitasking.],
   [Built device drivers for VirtIO devices and designed a read/write ext2-based filesystem with caching.],
   [Designed an implemented a custom filesystem inspired by FAT32 and the implemented mkfs utility in bash.]
