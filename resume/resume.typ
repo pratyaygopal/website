@@ -1,4 +1,4 @@
-#import "template.typ": resume, header, coursework_item, resume_heading, edu_item, exp_item, exp_item_location, project_item, skill_item
+#import "template.typ": *
 
 #show: resume
 
