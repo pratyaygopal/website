@@ -75,7 +75,7 @@
 )
 
 #project_item(
-  name: "Unix based OS with a Custom Filesystem for RISC-V",
+  name: "Unix-esque OS with a Custom Filesystem",
   skills: "github.com/pratyaygopal/pgfs",
   [Implementing key components including virtual memory management, preemptive multitasking.],
   [Built device drivers for VirtIO devices and designed a read/write ext2-based filesystem with caching.],
