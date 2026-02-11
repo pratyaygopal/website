@@ -16,7 +16,7 @@
   name: "University Of Illinois Urbana Champaign",
   degree: "Bachelor of Science in Computer Engineering, Minor in Mathematics",
   GPA: " ",
-  date: "December 2026"
+  date: " "
 )
 
 #coursework_item(
